@@ -18,5 +18,9 @@ __pycache__/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Embedded repos / large folders
-Internships/Unified Mentor Internship/All projects and Completed Projects/Unified Mentor Completed Projects/
+# Ignore everything in Unified Mentor Internship
+Internships/Unified Mentor Internship/*
+
+# But allow the Completed Projects folder and its contents
+!Internships/Unified Mentor Internship/All projects and Completed Projects/
+!Internships/Unified Mentor Internship/All projects and Completed Projects/Unified Mentor Completed Projects/
