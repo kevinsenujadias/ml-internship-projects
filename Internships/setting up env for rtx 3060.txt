@@ -1,0 +1,14 @@
+# Create environment
+conda create -n NEW_ENV python=3.10 -y
+conda activate NEW_ENV
+
+# Install CUDA + TensorFlow
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
+pip install tensorflow==2.10.0 jupyter ipykernel pandas numpy scikit-learn matplotlib seaborn
+pip uninstall numpy -y && pip install "numpy<1.24"
+
+# Register kernel
+python -m ipykernel install --user --name=NEW_ENV --display-name "Python (NEW_ENV)"
+
+# Verify
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"

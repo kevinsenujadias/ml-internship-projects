@@ -1,0 +1,22 @@
+# Datasets & big folders
+*.zip
+*.csv
+train/
+test/
+data/
+images/
+dataset*/
+chest_xray/
+Meta/
+images png/
+
+# System / temp files
+*.DS_Store
+*.~lock.*
+__pycache__/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Embedded repos / large folders
+Internships/Unified Mentor Internship/All projects and Completed Projects/Unified Mentor Completed Projects/
